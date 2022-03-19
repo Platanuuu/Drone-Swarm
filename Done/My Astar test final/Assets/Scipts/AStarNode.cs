@@ -15,6 +15,8 @@ public class AStarNode
     public int x;
     public int y;
 
+    public int z;
+
    //寻路消耗
    public float f;
    //距离起点的距离
@@ -27,10 +29,11 @@ public class AStarNode
    public E_Node_Type type;
 
 //构造函数传入坐标和类型
-    public AStarNode( int x, int y ,E_Node_Type type)
+    public AStarNode( int x, int y , int z,E_Node_Type type)
     {
         this.x=x;
         this.y=y;
+        this.z=z;
         this.type=type;
     }
 
